@@ -1,0 +1,35 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="io.cristianbara.github.myWaterIntake" version="1.0.0">
+    <name>My Water Intake</name>
+    <description>Count how much water you drink daily.</description>
+    <author href="http://cristianbara.github.io" email="cristian.dan.bara@gmail.com">CB web dev.</author>
+    <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="handset" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-installLocation" value="preferExternal" />
+
+    <icon src="icon.png" />
+
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="2000" />
+
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="splash.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="splash.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="splash.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="splash.png" />
+
+    <gap:splash src="splash.png" />
+
+    <gap:config-file platform="android" parent="/manifest">
+        <application android:theme="@android:style/Theme.NoTitleBar">
+        </application>
+    </gap:config-file>
+</widget>
